@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/gameFragment"
+        android:title="@string/game"
+        android:icon="@drawable/ic_dice"/>
+
+    <item
+        android:id="@+id/rulesFragment"
+        android:title="@string/rules"
+        android:icon="@drawable/ic_rules"/>
+
+    <item
+        android:id="@+id/proceduresFragment"
+        android:title="@string/procedure"
+        android:icon="@drawable/ic_award"/>
+
+<!--    <item-->
+<!--        android:id="@+id/aboutFragment"-->
+<!--        android:title="@string/about"-->
+<!--        android:icon="@drawable/ic_baseline_info_24"/>-->
+
+</menu>

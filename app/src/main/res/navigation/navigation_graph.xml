@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/gameFragment">
+
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.giaidac.ccjackpot.presentation.fragments.RulesFragment"
+        android:label="RulesFragment" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.giaidac.ccjackpot.presentation.fragments.GameFragment"
+        android:label="GameFragment" />
+    <fragment
+        android:id="@+id/proceduresFragment"
+        android:name="com.giaidac.ccjackpot.presentation.fragments.ProceduresFragment"
+        android:label="ProceduresFragment" >
+        <action
+            android:id="@+id/navigateToDescription"
+            app:destination="@id/descriptionFragment">
+            <argument
+                app:argType="string"
+                android:name="dataContent"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/descriptionFragment"
+        android:name="com.giaidac.ccjackpot.presentation.fragments.DescriptionFragment"
+        android:label="DescriptionFragment" >
+        <argument
+            app:argType="string"
+            android:name="dataContent"/>
+    </fragment>
+</navigation>
